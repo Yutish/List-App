@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_shape"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/addinLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".95"
+        android:background="@drawable/background_shape"
+        android:backgroundTint="@color/curveBackgroundColor"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/listEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_shape"
+                android:backgroundTint="@color/backgroundColor"
+                android:ems="10"
+                android:hint="@string/editTextHint"
+                android:inputType="text"
+                android:textColor="@color/colorAccent"
+                tools:ignore="Autofill" />
+
+            <ImageButton
+                android:id="@+id/addedText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2.5dp"
+                android:layout_weight="6"
+                android:background="@drawable/buttons_shape"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:contentDescription="@string/todo_tick"
+                android:onClick="addItems"
+                app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/itemListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <!--second part starts from here-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addItemInList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foregroundGravity="center"
+        android:padding="5dp"
+        android:tint="@color/backgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</android.support.constraint.ConstraintLayout>

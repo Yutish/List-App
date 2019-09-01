@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#666666</color>
+    <color name="colorPrimaryDark">#404040</color>
+    <color name="colorAccent">#404040</color>
+    <color name="backgroundColor">#f2f2f2</color>
+    <color name="curveBackgroundColor">#c0c0c0</color>
+    <color name="removeTaskColor">#ff4d4d</color>
+    <color name="minimizeMaximizeColor">#ffff80</color>
+    <color name="taskCompletedColor">#99ff99</color>
+    <color name="googleBackgroundColor">#6666ff</color>
+
+</resources>
